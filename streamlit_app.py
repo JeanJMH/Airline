@@ -3,6 +3,7 @@ from langchain.llms import OpenAI
 from langchain_core.output_parsers import StrOutputParser
 from langchain_core.runnables import RunnableBranch
 from langchain.prompts import ChatPromptTemplate
+from langchain.prompts import PromptTemplate
 import langchain
 import os
 
