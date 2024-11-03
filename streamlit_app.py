@@ -9,8 +9,8 @@ from langchain.chat_models import ChatOpenAI
 st.title("Share with us your experience of the latest trip")
 
 os.environ["OPENAI_API_KEY"] = st.secrets["OpenAIkey"]
-###llm = OpenAI(api_key=os.getenv("OPENAI_API_KEY"))
-llm = ChatOpenAI(model="gpt-4o", openai_api_key=os.getenv("OPENAI_API_KEY"))
+llm = OpenAI(api_key=os.getenv("OPENAI_API_KEY"))
+
 
 feedback_type_template = """You are team support analyst. Analyze the following feedback text to determine if it inside the following clasification:
 1. negative experience: for negative experiences caused by the airline's fault (for example lost luggage).
