@@ -9,9 +9,6 @@ import langchain
 
 
 st.title("Share with us your experience of the latest trip")
-st.write(
-    "Let's start building! For help and inspiration, head over to [docs.streamlit.io](https://docs.streamlit.io/)."
-)
 
 os.environ["OPENAI_API_KEY"] = st.secrets["OpenAIkey"]
 llm = OpenAI(api_key=os.getenv("OPENAI_API_KEY"))
@@ -59,8 +56,6 @@ branch = RunnableBranch(
 )
 
 full_chain = { "feedback_type": feedback_type_chain, "text": lambda x: x["feedback"]} | branch
-
-feedback = st.text_area("Share with us your experience of the latest trip:")
 
 if st.button("Submit"):
     result = full_chain.invoke({"feedback": feedback})
