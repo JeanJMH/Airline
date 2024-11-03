@@ -56,8 +56,7 @@ branch = RunnableBranch(
 )
 
 full_chain = { "feedback_type": feedback_type_chain, "text": lambda x: x["feedback"]} | branch
-
+feedback = st.text_area(" ")
 if st.button("Submit"):
-    feedback = st.text_area("Comments:")
     result = full_chain.invoke({"feedback": feedback})
     st.write(result)
