@@ -1,8 +1,8 @@
 import streamlit as st
 from langchain.llms import OpenAI
-from langchain.prompts import ChatPromptTemplate
 from langchain_core.output_parsers import StrOutputParser
 from langchain_core.runnables import RunnableBranch
+from langchain.prompts import ChatPromptTemplate
 import langchain
 import os
 
