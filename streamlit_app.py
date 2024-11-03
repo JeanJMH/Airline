@@ -4,7 +4,7 @@ from langchain.llms import OpenAI
 from langchain_core.output_parsers import StrOutputParser
 from langchain_core.runnables import RunnableBranch
 from langchain.prompts import PromptTemplate
-from langchain.chat_models import ChatOpenAI
+
 
 st.title("Share with us your experience of the latest trip")
 
