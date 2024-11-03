@@ -18,7 +18,7 @@ feedback_type_template = """You are team support analyst. Analyze the following 
 2. negative beyond control: for negative experiences beyond the airline's control (for example weather-related delays).
 3. positive experience: for positive experiences.
 
-Respond only the clasification
+Respond only the clasification, and make sure you respond proffecionally and to the point.
 
 Text:
 {feedback}
